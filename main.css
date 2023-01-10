@@ -1,0 +1,138 @@
+@font-face{
+    font-family:"SF-Pro-regular"; 
+    src : url("Fonts/sf-pro-display_regular.woff2"); 
+  
+  }
+@font-face {
+    font-family: "SF-Pro-semibold";
+    src : url("Fonts/sf-pro-display_semibold.woff2")
+  }
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+  }
+  @keyframes typewriter{
+    from{width: 0;}
+    to{width: 5em;}
+    }
+  @keyframes blinkTextCursor{
+    from{border-right-color: black;}
+    to{border-right-color: transparent;}
+    }
+body {
+    margin:0px; 
+}
+a{
+    text-decoration-line:none;
+    color:wheat
+   
+}
+.first {
+ display:flex;  
+ flex-direction:column ;
+ background-color:green ;
+ height:100vh ; 
+ width:100%; 
+ background:radial-gradient( circle farthest-corner at 10% 20%,rgb(6, 72, 138),   rgba(6,123,239,1) 14.2%, rgba(219,115,249,1) 89.5% ); 
+ background-size: 400% 400%;
+
+ -webkit-animation: AnimationName 7s ease-out  infinite;
+ animation: AnimationName 30s ease infinite;
+
+}
+.nav li {
+    font-size : 5vh;
+    font-family: 'SF-Pro-regular';
+    list-style: none;
+   color :aliceblue; 
+   font-weight: 800;
+}
+.line-1{
+  
+  top: 50%;  
+  font-size:16vh;
+  margin: 0 auto;
+  border-right: 4px solid black;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
+    
+}
+.first-text{
+   background-color:none; 
+   display:flex; 
+   flex-direction: column; 
+   justify-content: center;
+   text-align: center;
+   margin-top: 35vh;
+   font-size:75px;
+   font-family: 'SF-Pro-regular';
+   font-weight: 900;
+   
+   animation: typewriter 4s steps(26) 1s 1 normal both,
+           blinkTextCursor 800ms steps(26) infinite normal;
+}
+.intro{
+    display:flex; 
+    flex-direction:column ; 
+  
+    height:100vh; 
+    justify-content: center;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(234,249,249,0.67) 0.1%, rgba(239,249,251,0.63) 90.1% );
+}
+.intro-box{
+    display:flex ;
+    flex-direction: column;
+    background-image: linear-gradient( 92.7deg,  rgba(245,212,212,1) 8.5%, rgba(252,251,224,1) 90.2% );
+    height:100vh ; 
+    border-radius:5vw;
+    margin:5vw; 
+}
+.intro-box h1{
+  text-align:center; 
+  font-size:7vh;
+  font-family:'SF-Pro-regular'; 
+  font-weight: 700;
+}
+.contacts{
+    background-color: aqua;
+    height:100vh; 
+    display: flex; 
+    flex-direction: column;
+    width:100%; 
+    background-color:rgb(0, 0, 0)
+}
+.contacts h1 {
+  text-align: center;
+  justify-content: center;
+  font-size:80px; 
+  font-family:'SF-Pro-regular'; 
+  background:linear-gradient( 109.6deg,  rgba(62,161,219,1) 11.2%, rgba(93,52,236,1) 100.2% );;
+ -webkit-text-fill-color: transparent;
+ -webkit-background-clip: text;
+}
+.links-box{
+  background-color:black; 
+  margin-right:2.5vw;
+  text-align: center;
+}
+.links li {
+ display:inline-block; 
+  list-style: none;
+  padding-right:4vw;  
+  padding-top: 1vh;
+  font-family:'Oswald';
+  font-size: 3vh; 
+  text-decoration: none;
+  color:white; 
+  justify-content: center;
+  text-align: center;
+}
+.gmail{
+  margin-right:5vw;
+  display:inline-block ;
+  text-align: center;
+  justify-content: center;
+
+}
