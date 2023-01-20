@@ -7,6 +7,11 @@
     font-family: "SF-Pro-semibold";
     src : url("Fonts/sf-pro-display_semibold.woff2")
   }
+
+@font-face{
+  font-family:"Tusker"; 
+  src: url("Fonts/TuskerGrotesk-8700Bold\ .woff2") ; 
+}
 @keyframes AnimationName {
     0%{background-position:0% 50%}
     50%{background-position:100% 50%}
@@ -20,6 +25,21 @@
     from{border-right-color: black;}
     to{border-right-color: transparent;}
     }
+
+
+::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+      background: none;
+  }
+  
+  ::-webkit-scrollbar {
+      width: 6px;
+      background: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+      background: #000000;
+  }
 body {
     margin:0px; 
 }
@@ -51,7 +71,6 @@ a{
 .line-1{
   
   top: 50%;  
-
   margin: 0 auto;
   border-right: 4px solid black;
   white-space: nowrap;
@@ -79,21 +98,20 @@ a{
   
     height:100vh; 
     justify-content: center;
-    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(234,249,249,0.67) 0.1%, rgba(239,249,251,0.63) 90.1% );
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
 }
 .intro-box{
     display:flex ;
     flex-direction: column;
-    background-image: linear-gradient( 92.7deg,  rgba(245,212,212,1) 8.5%, rgba(252,251,224,1) 90.2% );
-    height:100vh ; 
-    border-radius:5vw;
-    margin:5vw; 
+    border-radius:4vw;
+    margin:5vw ; 
 }
-.intro-box h1{
+.intro h1{
   text-align:center; 
-  font-size:7vh;
-  font-family:'SF-Pro-regular'; 
-  font-weight: 700;
+  font-size:9vh;
+  font-family:'Yeseva One'; 
+ margin-top : 3vh;
+ padding-top:10vh
 }
 .contacts{
     background-color: aqua;
@@ -108,13 +126,14 @@ a{
   justify-content: center;
   font-size:80px; 
   font-family:'SF-Pro-regular'; 
+  
   background:linear-gradient( 109.6deg,  rgba(62,161,219,1) 11.2%, rgba(93,52,236,1) 100.2% );;
  -webkit-text-fill-color: transparent;
  -webkit-background-clip: text;
 }
 .links-box{
   background-color:black; 
-  margin-right:2.5vw;
+  margin-left:1vw;
   text-align: center;
 }
 .links li {
@@ -134,5 +153,11 @@ a{
   display:inline-block ;
   text-align: center;
   justify-content: center;
-
 }
+/* .links li img{
+  filter : grayscale(2000%); 
+}
+.links li img:hover{
+
+  filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+} */
