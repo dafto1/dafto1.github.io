@@ -109,9 +109,10 @@ a{
 .intro h1{
   text-align:center; 
   font-size:9vh;
-  font-family:'Yeseva One'; 
+  font-family:'SF-Pro-semibold'; 
  margin-top : 3vh;
- padding-top:10vh
+ padding-top:10vh; 
+ font-weight:600
 }
 .contacts{
     background-color: aqua;
