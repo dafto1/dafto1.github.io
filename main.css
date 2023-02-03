@@ -43,7 +43,7 @@ a{
  width:100%; 
  background:radial-gradient( circle farthest-corner at 10% 20%,rgb(6, 72, 138),   rgba(6,123,239,1) 14.2%, rgba(219,115,249,1) 89.5% ); 
  background-size: 400% 400%;
-
+ 
  -webkit-animation: AnimationName 7s ease-out  infinite;
  animation: AnimationName 30s ease infinite;
 
@@ -54,6 +54,7 @@ a{
     list-style: none;
    color :aliceblue; 
    font-weight: 800;
+  
 }
 .line-1{
   
@@ -137,6 +138,7 @@ a{
   text-align: center;
 }
 .gmail{
+  font-size:2vh; 
   margin-right:5vw;
   display:inline-block ;
   text-align: center;
